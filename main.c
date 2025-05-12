@@ -1,3 +1,4 @@
+/* Autor: Gabriel Pucci Bizio */
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>

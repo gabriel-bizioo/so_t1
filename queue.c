@@ -1,5 +1,6 @@
 #include "queue.h"
 
+/* Autor: Gabriel Pucci Bizio */
 void init_fifoQ(fifo_qt *F) {
     F->vez_atual = 0;
     F->n_esperando = 0;

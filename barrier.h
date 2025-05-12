@@ -1,6 +1,7 @@
 #ifndef BARRIER
 #define BARRIER
 
+/* Autor: Gabriel Pucci Bizio */
 #include <pthread.h>
 
 /* Armazena respectivamente:
@@ -10,7 +11,6 @@
  */
 typedef struct barrier_s {
     pthread_mutex_t enter;
-    pthread_mutex_t leave;
     int barrier_number;
     int total_processes;
 } barrier_t;

@@ -1,10 +1,10 @@
 #include "barrier.h"
 #include <stdio.h>
 
+/* Autor: Gabriel Pucci Bizio */
 void init_barr(barrier_t *barr, int n) {
 
     pthread_mutex_init(&barr->enter, NULL);
-    pthread_mutex_init(&barr->leave, NULL);
     barr->barrier_number = n;
     barr->total_processes = 0;
    }
