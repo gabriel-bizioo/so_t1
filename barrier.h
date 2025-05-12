@@ -9,7 +9,8 @@
  *  quantidade de processos em espera no estado atual
  */
 typedef struct barrier_s {
-pthread_mutex_t semaphore;
+    pthread_mutex_t enter;
+    pthread_mutex_t leave;
     int barrier_number;
     int total_processes;
 } barrier_t;
